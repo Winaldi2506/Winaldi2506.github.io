@@ -1,0 +1,224 @@
+
+@import 'variables';
+@import 'functions';
+@import 'body';
+@import 'section-header';
+@import 'contact-form';
+@import 'contact-info';
+@import 'alert';
+@import 'icon';
+@import 'list-item';
+@import 'p';
+@import 'navbar';
+
+
+// Variables
+$primary-color: #FF0099;
+$secondary-color: #DC00D3;
+$background-color: #ffffff;
+$form-background-color: #FFC3EE;
+$button-background-color: #FF00F5;
+$text-color: #333;
+$info-background-color: #FF00F5;
+$info-text-color: #fff;
+$alert-background-color: #FABBFA;
+$list-item-margin: 10px;
+$icon-background-color: #FABBFA;
+$p-background-color: #B38CB3;
+$isDarkTheme: true;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: if($isDarkTheme, $background-color, #000); 
+}
+
+.contact-form {
+  padding: 5px;
+
+  h2 {
+    font-size: 24px;
+    color: if($isDarkTheme, $text-color, #fff); 
+  }
+
+  .btn-grad {
+    background-color: if($isDarkTheme, $button-background-color, #333); 
+
+    &:hover {
+      background-image: if($isDarkTheme, gradient-background(#d332c6, #ff14c4), none); 
+    }
+  }
+}
+
+.alert {
+  margin-top: 20px;
+  text-align: center;
+  display: if($isDarkTheme, none, block); 
+}
+
+$button-colors: #FF0099, #DC00D3, #FF00F5;
+
+@for $i from 1 through length($button-colors) {
+  .button-#{$i} {
+    background-color: nth($button-colors, $i);
+    
+  }
+}
+
+
+// Functions
+@function gradient-background($start-color, $end-color) {
+  @return linear-gradient(to right, $start-color, $end-color);
+}
+
+// Styles
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+}
+
+.section-header {
+  margin-top: 40px;
+
+  h3 {
+    font-size: 36px;
+    color: $primary-color;
+  }
+
+  .line {
+    display: block;
+    margin: 20px auto;
+    width: 60px;
+    height: 2px;
+    background: $secondary-color;
+  }
+}
+
+.contact-form {
+  padding: 5px;
+
+  h2 {
+    font-size: 24px;
+    color: $text-color;
+  }
+
+  label {
+    font-size: 18px;
+    color: $text-color;
+  }
+
+  .form-control {
+    height: 42px;
+    padding: 10px;
+    background: $form-background-color;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e4e4e4;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      background-color: $form-background-color;
+    }
+  }
+
+  textarea {
+    resize: none;
+    padding: 10px;
+    height: 150px;
+    background: $form-background-color;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e4e4e4;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      background-color: $form-background-color;
+    }
+  }
+
+  .btn-grad {
+    background-color: $button-background-color;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+      background-image: gradient-background(#d332c6, #ff14c4);
+    }
+  }
+}
+
+.contact-info {
+  background-color: $info-background-color;
+  padding: 40px;
+  border-radius: 10px;
+  color: $info-text-color;
+
+  .contact-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+
+  img {
+    max-width: 65%;
+    height: auto;
+  }
+}
+
+.alert {
+  margin-top: 20px;
+  text-align: center;
+  display: none;
+}
+
+#icon {
+  height: 60px;
+  background-color: $icon-background-color;
+  margin: 0;
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list-inline-item {
+  margin-left: $list-item-margin;
+}
+
+#p {
+  max-height: 30px;
+  background-color: $p-background-color;
+  margin: 0;
+  padding: 2px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: $icon-background-color;
+
+  .navbar-brand {
+    margin-right: auto;
+  }
+
+  #logo {
+    height: 45px;
+  }
+
+  .navbar-nav .nav-link {
+    color: black;
+  }
+}

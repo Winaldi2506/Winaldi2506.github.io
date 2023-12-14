@@ -1,0 +1,22 @@
+$font-stack: Helvetica, sans-serif;
+$background-color: rgb(230, 231, 233);
+$primary-color: blue;
+$score: 80;
+
+body {
+    font: 100% $font-stack;
+    background-color: $background-color;
+}
+
+h1 {
+    $primary-color: green;
+    color: $primary-color;
+}
+
+p {
+    color: $primary-color;
+}
+
+.score {
+    font-size: $score * 1px;
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azri</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <!-- Font Google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="logo.png" alt="" id="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
+          <img src="toggle.png" alt="" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/home/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/catalog/index.html">Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/ulasan/index.html">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- Testimonial start-->
+    <section class="testimonial section-padding" data-scroll-index="4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center white">
+              <h2><b>ULASAN</b></h2>
+            </div>
+
+            <div class="section-content">
+              <div class="row">
+                <div class="offset-md-2 col-md-8 col-sm-12">
+                  <div class="slider">
+                    <div class="slider-item">
+                      <div class="test-img">
+                        <img
+                          src="images/user1.jpg"
+                          alt="Placeholder"
+                          width="157"
+                          height="157"
+                        />
+                      </div>
+                      <div class="test-text">
+                        <span class="title"
+                          ><span>John Michal</span> Digital Designer</span
+                        >
+                        Consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam eratvo
+                        lutpat.
+                      </div>
+                    </div>
+                    <div class="slider-item">
+                      <div class="test-img">
+                        <img
+                          src="images/user3.jpg"
+                          alt="Placeholder"
+                          width="157"
+                          height="157"
+                        />
+                      </div>
+                      <div class="test-text">
+                        <span class="title"
+                          ><span>Steve Smith</span> App User</span
+                        >
+                        Euismod tincidunt ut laoreet dolore magna aliquam eratvo
+                        lutpat. Ut wisi enim ad minim veniam, quis nostrud v
+                      </div>
+                    </div>
+                    <div class="slider-item">
+                      <div class="test-img">
+                        <img
+                          src="images/user3.jpg"
+                          alt="Placeholder"
+                          width="157"
+                          height="157"
+                        />
+                      </div>
+                      <div class="test-text">
+                        <span class="title"
+                          ><span>Gordon Shaw</span> Blogger</span
+                        >
+                        Consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam eratvo
+                        lutpat. Ut wisi enim ad minim veniam, quis nostrud v
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial End-->
+
+    <!-- Form Ulasan -->
+    <section class="review-form section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center">
+              <h2><b>Tambahkan Ulasan</b></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <form
+              id="reviewForm"
+              action="#"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <div class="form-group">
+                <label for="name">Nama Anda</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="occupation">Pekerjaan</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="occupation"
+                  name="occupation"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="review">Ulasan Anda</label>
+                <textarea
+                  class="form-control"
+                  id="review"
+                  name="review"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="photo">Unggah Foto (Opsional)</label>
+                <input
+                  type="file"
+                  class="form-control-file"
+                  id="photo"
+                  name="photo"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Submit Ulasan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Form Ulasan -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container" id="footer">
+        <hr class="garis" />
+        <div class="d-flex justify-content-center align-items-center" id="icon">
+          <ul class="list-inline text-center m-0 p-0">
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/wearcute.things/">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
+                  alt="Instagram Logo"
+                  class="rounded icon-img"
+                />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXSqmThGxCGtbJgdXKflLptxqbqsHrLmfMBCWpFDzFvLGRKXdNMzQJQxDKTnvpfhzNcJG"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Circle-icons-mail.svg/1024px-Circle-icons-mail.svg.png"
+                  alt="Email Icon"
+                  class="rounded icon-img"
+                />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://wa.me/6281383962237">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/022/100/870/non_2x/whatsapp-logo-transparent-free-png.png"
+                  alt="WhatsApp Logo"
+                  class="rounded icon-img"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center" id="p">
+          <p>2023 © | Wearcute.Things</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- scrollIt js -->
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW();
+      wow.init();
+      $(document).ready(function (e) {
+        $("#video-icon").on("click", function (e) {
+          e.preventDefault();
+          $(".video-popup").css("display", "flex");
+          $(".iframe-src").slideDown();
+        });
+        $(".video-popup").on("click", function (e) {
+          var $target = e.target.nodeName;
+          var video_src = $(this).find("iframe").attr("src");
+          if ($target != "IFRAME") {
+            $(".video-popup").fadeOut();
+            $(".iframe-src").slideUp();
+            $(".video-popup iframe").attr("src", " ");
+            $(".video-popup iframe").attr("src", video_src);
+          }
+        });
+
+        $(".slider").bxSlider({
+          pager: false,
+        });
+      });
+
+      $(window).on("scroll", function () {
+        var bodyScroll = $(window).scrollTop(),
+          navbar = $(".navbar");
+
+        if (bodyScroll > 50) {
+          $(".navbar-logo img").attr("src", "images/logo-black.png");
+          navbar.addClass("nav-scroll");
+        } else {
+          $(".navbar-logo img").attr("src", "images/logo.png");
+          navbar.removeClass("nav-scroll");
+        }
+      });
+      $(window).on("load", function () {
+        var bodyScroll = $(window).scrollTop(),
+          navbar = $(".navbar");
+
+        if (bodyScroll > 50) {
+          $(".navbar-logo img").attr("src", "images/logo-black.png");
+          navbar.addClass("nav-scroll");
+        } else {
+          $(".navbar-logo img").attr("src", "images/logo-white.png");
+          navbar.removeClass("nav-scroll");
+        }
+
+        $.scrollIt({
+          easing: "swing", // the easing function for animation
+          scrollTime: 900, // how long (in ms) the animation takes
+          activeClass: "active", // class given to the active nav element
+          onPageChange: null, // function(pageIndex) that is called when page is changed
+          topOffset: -63,
+        });
+      });
+    </script>
+  </body>
+</html>

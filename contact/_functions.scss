@@ -1,0 +1,5 @@
+// Functions
+@function gradient-background($start-color, $end-color) {
+    @return linear-gradient(to right, $start-color, $end-color);
+  }
+  

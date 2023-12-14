@@ -1,0 +1,16 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: rgb(230, 231, 233);
+}
+
+h1 {
+  color: green;
+}
+
+p {
+  color: blue;
+}
+
+.score {
+  font-size: 80px;
+}/*# sourceMappingURL=style.css.map */

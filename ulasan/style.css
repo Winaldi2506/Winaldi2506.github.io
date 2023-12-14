@@ -1,0 +1,294 @@
+* {
+	padding:0;
+	margin:0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+}
+a {
+	color:#5f0099;
+}
+a:hover {
+	color:#5f0099;
+}
+h1, h2, h3 {
+	font-weight: 700;
+}
+h4, h5 {
+	font-weight:600;
+}
+h6 {
+	font-weight:500;
+}
+.white {
+	color:#ffffff !important;
+}
+.black {
+	color:#000000;
+}
+
+.testimonial {
+	background: #ff00ff;
+	
+	padding:100px 0px;
+	position:relative;
+}
+.testimonial::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(images/pattern.png);
+}
+.bx-prev {
+	left: -90px !important;
+	background: url(images/arrow-left.png) no-repeat !important;
+	background-size: auto auto !important;
+	background-size: 100% 100% !important;
+}
+.bx-next {
+	right: -90px !important;
+	background: url(images/arrow-right.png) no-repeat !important;
+	background-size: auto auto !important;
+	background-size: 100% 100% !important;
+	
+}
+.bx-wrapper {
+	border: none !important;
+	background: #FABBFA;
+	border-radius: 5px !important;
+	box-shadow:none !important;
+}
+.slider-item {
+	padding:20px;
+}
+.slider .test-img img {
+	border: 12px solid #fff;
+	border-radius: 50%;
+	width: 100%;
+	height: auto;
+}
+.test-img {
+	float: left;
+	width: 20%;
+	margin-right:5%;
+}
+.test-text {
+	float: left;
+	width: 75%;
+}
+.slider .title {
+	display: block;
+	position: relative;
+	margin: 0 0 20px;
+	font-size: 1.125em;
+	line-height: 1.25;
+}
+.slider .title span {
+	display: block;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+@media all and (max-width:991px) {
+.navbar .navbar-collapse {
+	overflow: auto;
+	background:  rgb(213, 198, 221);
+	color: #fff !important;
+	text-align: center;
+	padding: 10px 0;
+}
+.nav-scroll .navbar-collapse {
+	background: #fff !important;
+}
+#contact_form {
+	margin-bottom:20px;
+}
+}
+@media all and (max-width:768px) {
+.nav-scroll .navbar-brand img, .navbar-brand img {
+	transform: scale(0.75) !important;
+	-webkit-transform: scale(0.75) !important;
+}
+.banner-text {
+	padding-right: 0px;
+	margin: 10px 0px 0px;
+}
+h2 {
+	font-size: 25px;
+}
+h3 {
+	font-size: 23px;
+}
+.section-padding {
+	padding: 40px 0px;
+}
+.banner-text p {
+	margin: 25px 0px;
+}
+.banner-text ul li a img {
+	width: 140px;
+	border-radius: 7px;
+}
+.sectioner-header {
+	width: 90%;
+}
+.sectioner-header p {
+	font-size: 14px;
+}
+.about-btn {
+	padding: 5px 30px;
+	margin-top: 0px;
+	font-size: 16px;
+}
+.single-feature {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.team-detail {
+	margin-top: 20px;
+}
+.team-detail img {
+	width: 50%;
+}
+.bx-controls
+{
+	display:none;
+}
+.bx-wrapper {
+	margin: 0px 20px !important;
+}
+.slider .test-img img {
+	margin: 0 auto;
+}
+.test-img {
+	float:none;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+.test-text {
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+.section-content {
+	margin-top: 40px;
+}
+.faq-content {
+	margin: 10px 0px;
+}
+.faq-content h4 {
+	font-size: 16px;
+}
+.faq-content p {
+	font-size: 13px;
+}
+#contact_form {
+	margin-bottom:20px;
+}
+.contact-item {
+	font-size: 12px;
+}
+.download ul li a img {
+	width: 120px;
+}
+.footer-copy p {
+	font-size: 10px;
+}
+}
+
+/* navbar footer */
+/* navbar */
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0;
+  }
+  
+  .navbar {
+	background-color: #FABBFA;
+  }
+  
+  .navbar-toggler {
+	background-color: transparent;
+	border: none;
+  }
+  
+  .navbar-brand {
+	margin-right: auto;
+  }
+  
+  #logo {
+	height: 45px;
+  }
+  
+  .navbar-nav .nav-link {
+	color: black;
+  }
+  
+  @media (max-width: 991px) {
+	.navbar-nav {
+	  margin-top: 10px;
+	}
+  
+	.navbar-collapse {
+	  background-color: #FABBFA;
+	  padding: 15px;
+	  border-radius: 5px;
+	}
+  
+	.navbar-toggler-icon {
+	  background-color: #000;
+	}
+  
+	.navbar-toggler {
+	  margin-right: 10px;
+	}
+  }
+  /* navbar */
+
+  /* footer */
+  .garis {
+	width: 100%; /* Lebar garis 100% dari lebar container */
+	border: 1px solid #000; /* Warna dan jenis garis */
+	margin: 20px 0; /* Margin atas dan bawah untuk jarak */
+}
+  #footer {
+	max-width: 100%;
+	background-color: #FABBFA;
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+  }
+  
+  #icon {
+	background-color: #FABBFA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .list-inline-item {
+	margin-left: 10px;
+  }
+  
+  .icon-img {
+	width: 30px; /* Ubah ukuran ikon sesuai kebutuhan */
+	height: auto; /* Biarkan tinggi otomatis disesuaikan */
+	padding-bottom: 15px;
+  }
+  
+  #p {
+	max-height: 30px;
+	background-color: #B38CB3;
+	margin: 0;
+	padding: 2px;
+  }
+  
+/* navbar footer */
+

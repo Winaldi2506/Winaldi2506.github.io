@@ -1,0 +1,19 @@
+// Styles for navbar
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: $icon-background-color;
+  
+    .navbar-brand {
+      margin-right: auto;
+    }
+  
+    #logo {
+      height: 45px;
+    }
+  
+    .navbar-nav .nav-link {
+      color: black;
+    }
+  }
+  

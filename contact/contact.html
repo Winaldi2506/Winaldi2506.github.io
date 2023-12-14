@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="logo.png" alt="" id="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
+          <img src="toggle.png" alt="" />
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/home/index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/about/about.html"
+                >About Us</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/catalog/index.html"
+                >Catalog</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/ulasan/index.html"
+                >Review</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <section class="contact section-padding" data-scroll-index="6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center">
+              <h3><b>CONTACT US</b></h3>
+              <span class="line"></span>
+              <p>
+                Jika anda ingin melakukan pemesanan, pertanyaan, atau ingin
+                memberikan masukan, silakan mengirim pesan di saluran website
+                ini, Kami siap membantu!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <div class="contact-form">
+              <form>
+                <div class="form-group">
+                  <label for="name">Nama:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="Alamat">Alamat:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Alamat"
+                    name="Alamat"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Telepon:</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Pesan:</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+                <button class="btn-grad w-100 text-uppercase" type="submit">
+                  Kirim
+                </button>
+                <div
+                  id="notification"
+                  class="alert alert-success"
+                  style="display: none"
+                ></div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-info">
+              <img src="photo.jpg" class="mx-auto d-block" /><br />
+              <h3><b>Informasi Detail</b></h3>
+
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Depok & Bogor</p>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>
+                  <a href="tel:+62 813-8396-2237" style="color: white"
+                    >+62 813-8396-2237</a
+                  >
+                </p>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>salmaaaa.ul@gmail.com</p>
+              </div>
+
+              <div class="contact-item">
+                <i class="fa fa-clock"></i>
+                <div class="media-body">
+                  <p class="text-uppercase">Jam Kerja</p>
+                  <p class="text-uppercase">Sen-Jum 09.00AM-05.00PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <script src="contact.js"></script>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-control" id="footer">
+        <div class="text-center" id="icon">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/wearcute.things/">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
+                  alt="Instagram Logo"
+                  style="width: 40px"
+                  class="rounded"
+                />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXSqmThGxCGtbJgdXKflLptxqbqsHrLmfMBCWpFDzFvLGRKXdNMzQJQxDKTnvpfhzNcJG"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Circle-icons-mail.svg/1024px-Circle-icons-mail.svg.png"
+                  alt="Email Icon"
+                  style="width: 42px"
+                  class="rounded"
+                />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://wa.me/6281383962237">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/022/100/870/non_2x/whatsapp-logo-transparent-free-png.png"
+                  alt="WhatsApp Logo"
+                  style="width: 50px"
+                  class="rounded"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center" id="p">
+          <p>&copy; 2023 Wearcute.Things</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- jQuery dan Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

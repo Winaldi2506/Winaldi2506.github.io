@@ -1,0 +1,113 @@
+.navbar {
+  background-color: #FABBFA;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+#logo {
+  height: 45px;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+}
+
+@media (max-width: 991px) {
+  /* Variabel lokal untuk perubahan warna lokal */
+  .navbar-nav {
+    margin-top: 10px;
+  }
+  .navbar-collapse {
+    background-color: #FF0000; /* Menggunakan variabel lokal */
+    padding: 15px;
+    border-radius: 5px;
+  }
+  .navbar-toggler-icon {
+    background-color: #000;
+  }
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+}
+/* navbar */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* navbar */
+/* footer */
+.garis {
+  width: 100%; /* Lebar garis 100% dari lebar container */
+  border: 1px solid #000; /* Warna dan jenis garis */
+  margin: 20px 0; /* Margin atas dan bawah untuk jarak */
+}
+
+#footer {
+  max-width: 100%;
+  background-color: #B38CB3;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#icon {
+  height: 60px;
+  background-color: #B38CB3;
+  margin: 0;
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list-inline-item {
+  margin-left: 10px;
+}
+
+.horizontal-line {
+  border: none;
+  height: 2px;
+  background-color: #000;
+}
+
+#p {
+  max-height: 30px;
+  background-color: #B38CB3;
+  margin: 0;
+  padding: 2px;
+}
+
+@media (max-width: 767px) {
+  #icon {
+    justify-content: center;
+  }
+}
+#logo img {
+  width: 250px;
+  margin-left: 50px;
+}
+
+.footer-control #icon {
+  height: 60px;
+  background-color: #fabbfa;
+  margin: 0;
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-link active #p {
+  max-height: 30px;
+  background-color: #b38cb3;
+  margin: 0;
+  padding: 2px;
+}/*# sourceMappingURL=style.css.map */
